@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <title>My Web Page!</title>
+    <head>   
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <style>
+            input[type=text] {
+                background-color: red;
+            }
+
+            input[type=number] {
+                background-color: yellow;
+            }
+            .alert {
+                margin: 20px;
+            }
+            a::before {
+                content: "\21d2  Click here: ";
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+        <form>
+
+            <input name="name" type="text" placeholder="First Name">
+            <input name="name" type="text" placeholder="Last Name">
+            <input name="name" type="number" placeholder="Age">
+
+        </form>
+        <div class="container">
+            <div class="alert alert-primary" role="alert">
+                This is an alert message. News!
+            </div>
+            <div class="alert alert-success" role="alert">
+                This is an alert message. Good news!
+            </div>
+            <div class="alert alert-danger" role="alert">
+                This is an alert message. Bad news!
+            </div>
+        </div>
+        <ul>
+            <li><a href="#">one link</a></li>
+            <li><a href="#">another link</a></li>
+            <li><a href="#">third link</a></li>
+        </ul>
+        <div class="container">
+            <button type="button" class="btn btn-primary">Primary</button>
+            <button type="button" class="btn btn-success">Success</button>
+            <button type="button" class="btn btn-danger">Danger</button>
+        </div>
+    </body>
+</html>
